@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRM · Human Error and Reliability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/module.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-logo" src="images/gat-logo.png" alt="GLOBAL Air Training">
+        <div>
+          <h1>Crew Resource Management</h1>
+          <p>Human Error and Reliability</p>
+        </div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span id="screen-label">Welcome</span>
+          <span id="progress-text">1 of 21</span>
+        </div>
+        <div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+      </div>
+      <div class="audio-bar">
+        <span class="sr-only" id="audio-status">Leo narration</span>
+        <button class="icon-btn" id="btn-play" title="Play narration">▶</button>
+        <button class="icon-btn" id="btn-replay" title="Replay narration">↺</button>
+        <button class="icon-btn" id="btn-mute" title="Mute">🔊</button>
+        <button class="text-btn" id="btn-speed" title="Playback speed">1×</button>
+        <button class="text-btn" id="btn-menu">Menu</button>
+      </div>
+    </header>
+
+    <main class="stage" id="stage" tabindex="-1"></main>
+
+    <footer class="dock">
+      <div class="dock-left">
+        <button class="ghost-btn" id="btn-transcript">Transcript</button>
+        <span class="lock-note" id="lock-note"></span>
+      </div>
+      <div class="dock-right">
+        <button class="ghost-btn" id="btn-prev">Back</button>
+        <button class="nav-btn" id="btn-next">Next</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="menu" id="menu" aria-label="Course menu"></aside>
+  <aside class="transcript" id="transcript" aria-label="Narration transcript">
+    <h2>Narration transcript</h2>
+    <p id="transcript-body"></p>
+  </aside>
+
+  <audio id="narration" preload="auto"></audio>
+  <script src="js/scorm12.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="com.globalairtraining.crm.module3" version="1.2"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                      http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                      http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+      <general>
+        <title>
+          <langstring xml:lang="en-GB">CRM - Human Error and Reliability</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="en-GB">GLOBAL Air Training Crew Resource Management: Human Error and Reliability.</langstring>
+        </description>
+      </general>
+    </lom>
+  </metadata>
+  <organizations default="ORG-CRM-MOD3">
+    <organization identifier="ORG-CRM-MOD3">
+      <title>CRM - Human Error and Reliability</title>
+      <item identifier="ITEM-SCO-1" identifierref="RES-SCO-1" isvisible="true">
+        <title>Human Error and Reliability</title>
+        <adlcp:masteryscore>80</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-SCO-1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="audio/.gitkeep"/>
+      <file href="audio/blame.mp3"/>
+      <file href="audio/complete.mp3"/>
+      <file href="audio/consequences.mp3"/>
+      <file href="audio/definition.mp3"/>
+      <file href="audio/design.mp3"/>
+      <file href="audio/detection.mp3"/>
+      <file href="audio/error-chain.mp3"/>
+      <file href="audio/error-types.mp3"/>
+      <file href="audio/errors-vs-violations.mp3"/>
+      <file href="audio/heinrich.mp3"/>
+      <file href="audio/losa-stats.mp3"/>
+      <file href="audio/manage.mp3"/>
+      <file href="audio/modern-view.mp3"/>
+      <file href="audio/not-always-bad.mp3"/>
+      <file href="audio/objectives.mp3"/>
+      <file href="audio/quiz.mp3"/>
+      <file href="audio/reliability.mp3"/>
+      <file href="audio/spanair.mp3"/>
+      <file href="audio/summary.mp3"/>
+      <file href="audio/violation-types.mp3"/>
+      <file href="audio/welcome.mp3"/>
+      <file href="css/module.css"/>
+      <file href="images/brand-crescent.png"/>
+      <file href="images/deviation.png"/>
+      <file href="images/error-chain.png"/>
+      <file href="images/flap-lever.jpg"/>
+      <file href="images/fleming.jpg"/>
+      <file href="images/flowerpot-context.png"/>
+      <file href="images/flowerpot-miss.png"/>
+      <file href="images/gat-logo.png"/>
+      <file href="images/gear-lever.jpg"/>
+      <file href="images/host-brandon.png"/>
+      <file href="images/quiz-close.jpg"/>
+      <file href="images/spanair-aircraft.jpg"/>
+      <file href="images/spanair-recovery.jpg"/>
+      <file href="images/spanair-wreck.jpg"/>
+      <file href="images/thrust-reverser.jpg"/>
+      <file href="index.html"/>
+      <file href="js/content.js"/>
+      <file href="js/player.js"/>
+      <file href="js/scorm12.js"/>
+      <file href="imsmanifest.xml"/>
+    </resource>
+  </resources>
+</manifest>
